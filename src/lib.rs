@@ -36,7 +36,6 @@ extern crate alloc;
 mod configuration;
 mod construct;
 mod event;
-mod parser;
 mod resolve;
 mod state;
 mod subtokenize;
@@ -45,6 +44,7 @@ mod to_mdast;
 mod tokenizer;
 mod util;
 
+pub mod parser;
 pub mod mdast; // To do: externalize?
 pub mod unist; // To do: externalize.
 
