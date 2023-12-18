@@ -35,18 +35,18 @@
 extern crate alloc;
 mod configuration;
 mod construct;
-mod event;
 mod resolve;
 mod state;
 mod subtokenize;
 mod to_html;
 mod to_mdast;
 mod tokenizer;
-mod util;
 
+pub mod event;
 pub mod parser;
 pub mod mdast; // To do: externalize?
 pub mod unist; // To do: externalize.
+pub mod util;
 
 #[doc(hidden)]
 pub use util::identifier::{id_cont, id_start};
