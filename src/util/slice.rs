@@ -110,7 +110,7 @@ impl<'a> Slice<'a> {
     /// Turn the slice into a `&str`.
     ///
     /// > 👉 **Note**: cannot represent virtual spaces.
-    pub fn as_str(&self) -> &str {
+    pub fn as_str(&self) -> &'a str {
         unsafe { str::from_utf8_unchecked(self.bytes) }
     }
 
